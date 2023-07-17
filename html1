@@ -1,0 +1,904 @@
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+<script src="https://kit.fontawesome.com/fa7f3f4fcb.js" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Volkhof' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+</head>
+<style>
+body
+{
+  background-color:white;margin:auto
+}
+.tile
+{
+  width:100%;
+  margin:0px auto;
+bottom:
+}
+#tile-1 .tab-pane
+{
+  padding:auto;
+  height:auto;
+border: px solid green; 
+}
+#tile-1 .nav-tabs
+{
+  position:fixed;
+  border:yes!important;
+  background-color:#f5f5f5;
+   box-shadow: 0 px px 0 rgba(0,0,0,0.2); padding:px; border-radius:5px 5px 0 0;bottom:0;border-top:2px solid #f1f1f1; width:100%;z-index:9999999; margin-left: px;
+}
+#tile-1 .nav-tabs li
+{
+  margin:0px!important;
+}
+#tile-1 .nav-tabs li a
+{
+  position:relative;
+  margin-right:0px!important;
+  padding: 15px 10px!important;
+  font-size:12px;
+bottom:0;
+border: px solid red;
+  border:none!important;
+  color:#a9a9a9;
+}
+#tile-1 .nav-tabs a:hover
+{
+  background-color:transparent!important;
+  border:none;
+}
+#tile-1 .slider
+{
+  display:inline-block;
+  width:40px;
+  height:4px;
+  border-radius:10px;
+  background-color:#CADBCC;
+  position:absolute;
+  z-index:1200;
+  bottom:0;
+  transition:all .4s linear;
+  
+}
+#tile-1 .nav-tabs .active
+{
+  background-color:transparent!important;
+  border:none!important;
+  color:#04BF17!important;
+}
+</style>
+<body>
+<div class="tile" id="tile-1">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <div class="slider"></div>
+     <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-house" style="margin-bottom:3px"></i></br>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-book" style="margin-bottom:3px"></i></br>Absensi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fa-solid fa-comments" style="margin-bottom:3px"></i></br> Pesan</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false"><i class="fa-solid fa-user" style="margin-bottom:3px"></i> </br>Akun</a>
+      </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+<! --isi{1) -->
+
+<!DOCTYPE html> 
+<html lang="en"> <head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<meta charset="UTF-8"> 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 	<link href="style.css" rel="stylesheet"> 
+<link href='https://fonts.googleapis.com/css?family=Bowlby One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+</head>
+<style>
+
+.boxi {width:100%;height:auto;padding-bottom:0vm}
+.boxi { content: ""; clear: both; display: table;
+}
+
+.container32 {border: px solid #ccc;
+ background: white; border-radius: 20px; padding: 2px 15px; width:90%; height: auto; margin-bottom:10px;padding-bottom:2vw;
+margin-top: -30%; margin-left:18px; margin-right:0px; box-shadow: 0px 3px 18px 0px rgba(0,0,0,0.1);
+}
+
+.container32::after { content: ""; clear: both; display: table;
+}
+
+* { 	margin: 0; 	padding: 0; 	font-family: 'Montserrat', sans-serif; }  #clock { 	font-size: 25px; 	background: -webkit-linear-gradient(#008B8B, #1488cc); 	-webkit-background-clip: text; 	-webkit-text-fill-color: transparent; float:;font-weight: 500; }
+
+.grid{
+ display:grid;
+ grid-template-columns: 70% 30%;
+ background:transparent;
+margin-left:px; margin-right:px;
+ border-bottom: 1.5px solid #f1f1f1;
+ margin-bottom:3vw;
+padding: 2px 2px;
+padding-right:4px;
+padding-bottom: 2px
+ }
+
+.grid2{
+ display:grid;
+ grid-template-columns: 100%;
+ background:transparent;
+margin-left:px; margin-right:px;
+ border-bottom: 1.5px solid #f1f1f1;
+ margin-bottom:3vw;
+padding: 2px 2px;
+padding-right:4px;
+padding-bottom: 2px
+ }
+
+.responsive1 {
+  width: 100%;
+margin-top: 0vw;
+  height: auto;
+position:relative;
+z-index:-2;
+  border-radius: 0px 0px 0 0
+}
+
+.alamat{ font-size:12px; font-weight:700; color:#FFA07A; font-family:verdana; text-align:left}
+
+.container292 { border: px solid silver; background: white; border-radius: 10px; padding: 2px 5px; width:100%; height: auto ; margin-bottom: 8px; margin-top: vw; margin-left: px; margin-right:px; padding-bottom: 0vw; box-shadow: 0px px px rgba(0,0,0,0.1);
+position: relative;
+}
+
+.container292::after { content: ""; clear: both; display: table;
+}
+
+a {-webkit-tap-highlight-color:rgba(0,0,0,0.2); border-radius:50℅; font-size: 12px
+}
+
+div.gallery66 {text-align: center;box-shadow: 0 px px 0 rgba(0,0,0,0.2); border-radius: 12px;
+  border:px solid #ccc;position: relative;
+width: 100%;  padding: 3px 5px; margin-bottom: 2vw; margin-left: vw;background:
+}
+
+div.gallery66 img:hover { box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2); background: white; transform: scale(1.0);
+}
+
+div.gallery66 img{
+  width: 90%; box-shadow: 0 px px 0 rgba(0,0,0,0.2); border: px solid white;
+  height: auto;background: ;
+border-radius:20%;
+}
+
+div.desc66 {;
+  padding: 2vw 0px;
+display: inline-block;
+  text-align: center;
+font-family: 'Poppins'; 
+margin-top: vw;
+margin-left: vw;
+font-size: 55%;
+font-weight: 700;
+color: #505050;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive66 {
+  padding: 0 6px;
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive66 {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+@media only screen and (max-width: 800px) {
+  .responsive66 {margin-left: 9px;margin-bottom:4ox;
+    width: 22%; padding: 0px 5px
+  }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-dakwah{ position: relative;
+margin-bottom: 0px; margin-top: 5vw;
+background:yellow;
+}
+.left-dakwah{ font-size: 4vw; font-weight: 500;
+position: absolute; color: black; margin-top: 3px; margin-bottom: 0.5px;
+margin-left: 18px; font-family: 'Fredoka One'; 
+}
+
+.right-dakwah{ font-size:12px; position: absolute; padding: 2px 0; text-align: center;margin-top: px;font-weight: 700; width: 25%;color: #32CD32;font-family: verdana;border: 1.5px solid #32CD32;	text-decoration: none;background-color: white;border-radius: 12px;box-shadow: 0 3px 8px 0px rgba(0,0,0,0.1);	display: inline-block; right: 8px;
+}
+.right-dakwah:hover{ display: inline-block;
+		background-color: #32CD32; color: white;
+		box-shadow: 0 3px 10px 0px rgba(0,0,0,0.2);
+		-webkit-transition:all 1s;
+		-moz-transition:all 1s;
+		transition:all 1s;
+}
+
+.container11240{ position: relative;
+margin-bottom: 0px; margin-top: vw;
+background:transpatent;
+}
+
+.left1240{ font-size: 4vw; font-weight: 500;
+position: absolute; color: black; margin-top: 3px; margin-bottom: 0.5px;
+margin-left: 18px; font-family: 'Fredoka One'; 
+}
+
+.right1260{ font-size:12px; position: absolute; padding: 2px 0; text-align: center;margin-top: px;font-weight: 700; width: 25%;color: #FFA500;font-family: verdana;border: 1.5px solid #FFA500;	text-decoration: none;background-color: white;border-radius: 12px;box-shadow: 0 3px 8px 0px rgba(0,0,0,0.1);	display: inline-block; right: 8px;
+}
+.right1260:hover{ display: inline-block;
+		background-color: #FFA500; color: white;
+		box-shadow: 0 3px 10px 0px rgba(0,0,0,0.2);
+		-webkit-transition:all 1s;
+		-moz-transition:all 1s;
+		transition:all 1s;
+}
+
+.swiper-container{height:60vw;background-color: transparent;z-index: 0;margin-top: 12vw;padding:px;margin-bottom: 5vw
+}
+.swiper-wrapper {align-items: center;}
+.swiper-slide {width: 85%;margin-left: 18px;margin-bottom:%;padding-bottom:vw;
+height: 55vw;border-radius: 10px;z-index: 0}
+.swiper-slide img {width: 100%;height: auto;
+box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+border-radius: 5px;z-index: 0;border:1px solid grey}
+.swiper-slide-active {transform: scale(1.0);transition: .4s;z-index: 0}
+
+.swiper-pagination { bottom: 25px; padding: 0 20px; left: 30%; transform: translateX(-38%); colir: green
+} 
+
+.info {width: 100%;display:inline-block;
+height: auto;padding:0px 4px;padding-bottom: 2vw;background: rgb(255, 255, 255);border: 2px solidsilver#f5f5f5;position: relative;margin-bottom: 10%;
+text-align: justify;margin-top:%;border-radius: 0 0 5px 5px;z-index: ;box-shadow: 0px 5px 8px 0 rgba(0,0,0,0.2);}
+
+.info h3 {font-size: 65%;margin-left: 5px;
+font-weight: 700;color: black;margin-top: 10px;
+z-index: 0;}
+
+.info p {font-size: 20px;margin-left: 5px;color: white;margin-top: 10px;z-index: 0;font-weight:700
+}
+
+.info a {text-decoration: none;color: white;background: transparent;float: right;margin-right: 5px;margin-top: 0%;border: 2px solid #9ACD32;border-radius: 20px;font-size: 12px;font-weight: 700;padding: 2px 15px;font-family: tahoma;
+z-index: 0;box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);}
+
+.info a:hover {background-color: #9ACD32; box-shadow: rgb(43, 191, 254);
+color: black;font-weight: 700;border:
+}
+
+.info .fa {font-size:20px;color:white; float:left; font-weight:700
+}
+
+
+.big-box { border: px solid silver; background: white;margin:auto;  padding: 2px 5px; width:100%; height: 100%; 
+position: relative;
+}
+
+.big-box::after { content: ""; clear: both; display: table;
+}
+
+
+.responsive2 {
+  width: 100%;
+margin-top: 0vw;
+  height: auto;
+position:relative;
+  border-radius: 0px 0px 0 0
+}
+
+.responsive3 {
+  width: 100%;
+margin-top: 5vw;
+  height: auto;
+position:relative;
+  border-radius: 0px 0px 0 0
+}
+
+.cont-pesan { border: px solid silver; background: white; border-radius: 10px; padding: 2px 5px; width: 100%; height: auto ; margin-bottom: 8px; margin-top: vw; margin-left: px; margin-right:px; padding-bottom: 0vw; box-shadow: 0px px px rgba(0,0,0,0.1);
+position: relative;
+}
+
+.cont-pesan::after { content: ""; clear: both; display: table;
+}
+
+.container21 { border: 2px solid #C8C8C8; background:white; border-radius: 12px; padding: 2vw 5px; padding-left: vw;padding-right: px;width: 90%; height: auto; margin-bottom:5px; margin-top: 5vw; margin-left: 0px;padding-bottom: 3vw; margin-right:px;text-align: left;display:inline-block; font-weight:700; box-shadow: 0px px px rgba(0,0,0,0.2);font-family:"Poppins":
+position: relative;float:
+}
+.container21::after { content: ""; clear: both; display: table;
+}
+
+.h157 {text-align:left;color:black;font-weight: 300;font-size: 13px;margin-top: 3vw;margin-left:0px;margin-right:px;font-family:'Fredoka One'}
+
+.kotak {margin-top: 40%;width:auto}
+
+.kotak2 {margin-top: 20%;width:auto}
+
+.image335 {width: 40%; margin-right: 0px; margin-bottom: 0vw; margin-top: -12px; border-radius:50%;border: px solid rgb(30, 144, 255); box-shadow: 0 px px 0 rgba(0,0,0,0.2); background: ;float:left;display:table;box-sizing: inherit
+}
+
+.image336 {width: 35%; margin-right: 0px; margin-bottom: 0vw; margin-top: -16px; border-radius:50%;border: px solid rgb(30, 144, 255); box-shadow: 0 px px 0 rgba(0,0,0,0.2); background: ;float:left;display:table;box-sizing: inherit
+}
+
+ .box-grid{
+ display:grid;
+ grid-template-columns: 70% 30%;
+ background:transparent;
+margin-left:px; margin-right:px;
+ border: px solid green;
+ margin-top:0px;
+padding: 2px 5px;
+padding-left:5px;
+padding-bottom: 0px
+ 
+ }
+
+.box-grid2{
+ display:grid;
+ grid-template-columns: 60% 40%;
+ background:transparent;
+margin-left:px; margin-right:px;
+ border: px solid green;
+ margin-top:0px;
+padding: 2px 5px;
+padding-left:5px;
+padding-bottom: 0px
+ }
+
+.button-absen{ font-size:12px;font-weight: 700; color: white; text-decoration:none; box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);background: #00BFFF;display:inline-block;border-radius: 20px;padding: 6px 20px ; margin-left: 0vw; margin-right: vw;position:relative; border: px solid #32CD32;box-sizing: border-box;
+margin-top: vw;left: 0px;font-family: tahoma;}
+
+.button-absen:hover {opacity:0.3; border: px solid #00BFFF; box-shadow: 0 3px 18px rgba(0,0,0,0.2);color:white;box-sizing:border-box;display:table}
+
+.button-absen2{ font-size:12px;font-weight: 700; color: white; text-decoration:none; box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);background: #3BAB01;display:inline-block;border-radius: 20px;padding: 6px 20px ; margin-left: 0vw; margin-right: vw;position:relative; border: px solid #3BAB01;box-sizing: border-box;
+margin-top: vw;left: 0px;font-family: tahoma;}
+
+.button-absen2:hover {opacity:0.3; border: px solid #00BFFF; box-shadow: 0 3px 18px rgba(0,0,0,0.2);color:white;box-sizing:border-box;display:table}
+
+.button-chat{ font-size:12px;font-weight: 700; color: white; text-decoration:none; box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);background: #00BFFF;display:inline-block;border-radius: 20px;padding: 6px 15px ; margin-left: 0vw; margin-right: vw;position:relative; border: px solid #32CD32;box-sizing: border-box;
+margin-top: vw;left: 0px;font-family: tahoma;}
+
+.button-chat:hover {opacity:0.3; border: px solid #00BFFF; box-shadow: 0 3px 18px rgba(0,0,0,0.2);color:white;box-sizing:border-box;display:table}
+
+.container-profil { border: 2px solid rgb(43, 191, 254); background: linear-gradient(to right,#B0E0E6 0%,#87CEFA 100%);border-radius: 12px; padding: 8vw 5px; padding-left: 5vw;padding-bottom: 1vw;width:90%; height: 37vw; margin-bottom:5vw; margin-top: 3vw; margin-left: px; margin-right:px;text-align: left; font-weight:700; box-shadow: 0px 3px 18px 0px rgb(255, 227, 200);font-family:"Poppins":
+position: relative;float:
+}
+.container20::after { content: ""; clear: both; display: table;}
+
+.text-3{text-align:left;color:#778899;font-size: 70%;margin-left:0px;margin-right:px;margin-top;-2px;margin-bottom: 0px;font-weight:700; font-family: 'Creat Round'; width: 100%}
+
+.text-4{text-align:left;color:#DB7093;font-size: 75%;margin-left:0px;margin-right:px;margin-top;-2px;margin-bottom: 0px;font-weight:700; font-family: 'Creat Round'; width: 100%}
+
+.h1583 {text-align:left;color:black;font-weight: 600;font-size: 90℅;margin-top:0vw;margin-right:px;font-family:'Secular One'}
+
+.container273 { border: px solid #ccc; background: #C1EBD5; border-radius: 40px; padding: 8px 6px; padding-left: 7px;width:90%; height: auto;padding-bottom: 2vw; margin-bottom:7vw; margin-top: 0vw; margin-left: 18px; margin-right:px; font-size: 14px; font-weight: 400; color: black; font-family:'Fredoka One'; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+position: relative;float:left
+}
+
+.container273::after { content: ""; clear: both; display: table;}
+
+.text-12 {text-align:left;widht:100%;color:#FF7F50;font-size:90%;font-weight: 700; ;margin-left:4vw;margin-right:8px;margin-top;3px;margin-bottom: 0px;font-family: 'Volkhof'}
+
+.container3 { border-bottom: px solid #; background-color: transparent; border-radius: 0px; padding: 4vw 10px; width:100%; height: auto;display: inline-block; margin-bottom:px; margin-top: 0vw; margin-left:px; padding-left: 7vw; margin-right:px;padding-bottom:2vw; box-shadow: 0px px px rgba(0,0,0,0.2);
+position: relative;font-family:'Fredoka One'; font-weight:100; font-size: 13px}
+
+.container3::after { content: ""; clear: both; display: table;}
+
+a {-webkit-tap-highlight-color:rgba(0,0,0,0.1); transition: 0.5s; underline: none}
+
+.text-88{font-size:12px;font-weight: 500;color: grey;font-family: 'Poppins'; underline: none}
+
+.text-77{font-size:16px;font-weight: 300;color: #202020;font-family: 'Fredoka One'; underline: none}
+
+.h158 {text-align:left;color:black;font-weight: 400;font-size: 20px;margin-left:0px;margin-right:px;font-family:'Viga'}
+
+.button-tabung{ font-size:12px;font-weight: 700; color: white; text-decoration:none; box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);background: #FFA500;display:inline-block;border-radius: 20px;padding: 6px 20px ; margin-left: 0vw; margin-right: 5vw;position:relative; border: px solid #32CD32;box-sizing: border-box;
+margin-top: -10vw;left: 0px;font-family: tahoma;float: right}
+
+.button-tabung:hover {opacity:0.3; border: px solid #00BFFF; box-shadow: 0 3px 18px rgba(0,0,0,0.2);color:white;box-sizing:border-box;display:table}
+</style>
+<body> 
+
+<img src="https://i.postimg.cc/8Pz27Pdt/20221115-074015-0000.png" alt="Background" class="responsive1" width="600" height="400">
+
+<div class="container32">
+<div class="grid">
+<img src="https://i.postimg.cc/rFfSgRy4/1668478237724.png" alt="Avatar" class="image336" style="box-sizing: inherit; display: table; height: auto; max-width: 100%; object-fit: fit; width: 80%;  margin-right: px; margin-top: 2%; border-radius:;border: px solid white; box-shadow: 0 px px 0 rgba(0,0,0,0.3); float:;"> 
+
+<img src="{foto}" alt="Avatar" class="image3361" style="box-sizing: inherit; display: table; height: auto; max-width: 100%; object-fit: fit; width: 50%;  margin-left: 50%; margin-top: 10%; border-radius:50%;border: px solid white; box-shadow: 0 3px 8px 0 rgba(0,0,0,0.3); float:right;"> 
+</div>
+
+<div class="grid2">
+<div class="alamat">
+<img src="https://i.postimg.cc/mrq0rcB9/location-pin.png" alt="Avatar" class="image3371" style="box-sizing: inherit; display: table; height: auto; max-width: 100%; object-fit: fit; width: 30px;  margin-right:0%; margin-top: -3%; border-radius:50%;border: px solid white; box-shadow: 0 px px 0 rgba(0,0,0,0.3); float:left;"> 
+{lokasi_kecamatan}, {lokasi_kota}
+</div>
+
+</div>
+<div class="grid">
+	<div id="tanggal"  style="clear: both; text-align: left;color:black;font-family: poppins, san-serif;font-size: 14px;font-weight: 700;text-decoration: none;margin-left:0px; border: px solid silver;box-shadow: 0 px px 0 rgba(0,0,0,0.2)">Loading...</div>
+	<script type='text/javascript'>
+	var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+	var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+	var date = new Date();
+	var day = date.getDate();
+	var month = date.getMonth();
+	var thisDay = date.getDay(),
+	thisDay = myDays[thisDay];
+	var yy = date.getYear();
+	var year = (yy < 1000) ? yy + 1900 : yy;
+	var e = document.getElementById("tanggal");
+	e.innerHTML = thisDay + ', ' + day + ' ' + months[month] + ' ' + year;
+	</script><p>
+
+	<p id="clock"></p> 	<script> 	 setInterval(customClock, 500); 	 function customClock() { 	 var time = new Date(); 	 var hrs = time.getHours(); 	 var min = time.getMinutes(); 	 var sec = time.getSeconds(); 	 	 document.getElementById('clock').innerHTML = hrs + ":" + min + ":" + sec; 	 	 } 	 	</script> 
+
+</div>
+
+</div>
+
+<div class="container292">
+<div class="boxi">
+  <div class="responsive66">
+
+ <a href="https://jgjk.mobi/p/6296d72a32428">
+  <div class="gallery66">
+ <img src="https://i.postimg.cc/YCmq6DxG/form-3.png" alt="Quis Interaktif" width="600" height="400"></a>
+    <div class="desc66">Pendaftaran</div>
+  </div>
+</div>
+
+<div class="responsive66">
+ <a href="https://jgjk.mobi/p/6394ac50453e1">
+  <div class="gallery66">
+      <img src="https://i.postimg.cc/nhmLtSgK/quran-2.png" alt="Tarik" width="600" height="400"></a>
+    <div class="desc66"> Baca Quran </div>
+  </div>
+</div>
+
+
+<div class="responsive66">
+ <a href="https://jgjk.mobi/p/6296d72a32428">
+  <div class="gallery66">
+     <img src="https://i.postimg.cc/v8NJrrHC/credit-card.png" alt="Car" width="600" height="200"></a>
+    <div class="desc66">SPP </div>
+  </div>
+</div>
+
+
+<div class="responsive66">
+ <a href="#">
+  <div class="gallery66">
+    <img src="https://i.postimg.cc/MHLXxnwX/donation-6.png" alt="Car" width="600" height="200"></a>
+    <div class="desc66">Infaq</div>
+  </div>
+</div>
+</div>
+<div class="boxi">
+<div class="responsive66">
+ <a href="https://jgjk.mobi/p/6296d72a32428">
+  <div class="gallery66">
+    <img src="https://i.postimg.cc/XvPqSZkh/praying.png" alt="Car" width="600" height="200"></a>
+    <div class="desc66">Doa-Doa</div>
+  </div>
+</div>
+
+<div class="responsive66">
+ <a href="https://jgjk.mobi/p/6394c5d73cc98">
+  <div class="gallery66">
+    <img src="https://i.postimg.cc/tgBZJTFv/magic-book-2.png" alt="Car" width="600" height="200"></a>
+    <div class="desc66">Mata Pelajaran</div>
+  </div>
+</div>
+
+<div class="responsive66">
+ <a href="action://p/6497f2f3bea5a">
+  <div class="gallery66">
+    <img src="https://i.postimg.cc/52CzFnyg/qibla-1.png" alt="Car" width="600" height="200"></a>
+    <div class="desc66">Qiblat</div>
+  </div>
+</div>
+
+<div class="responsive66">
+ <a href="https://jgjk.mobi/p/6394c5d73cc98">
+  <div class="gallery66">
+    <img src="https://i.postimg.cc/fbyyr7mm/calendar-2.png" alt="Car" width="600" height="200"></a>
+    <div class="desc66">Tanggal</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!--Text Slide-->
+
+<div class="container11240">
+<div class="left1240">
+Kabar Hikmah 
+
+</div>
+
+<a href="https://jgjk.mobi/m/6198ad23d677d"><div class="right1260"> Lihat Lainnya
+</div></a>
+</div>
+
+<!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+<a href="action://p/649f1652068cf">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2fj8jnDruQc2T86xsIDDsM4EN9CgJuuqTGQ&usqp=CAU">
+</a>
+
+</div>
+      <div class="swiper-slide">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2fj8jnDruQc2T86xsIDDsM4EN9CgJuuqTGQ&usqp=CAU">
+
+</div>
+      <div class="swiper-slide">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoXLWskwhHJnLsRFD64zewK8_usZXhovtvmw&usqp=CAU">
+
+</div>
+</div>
+
+  <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>  
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 5,
+      centeredSlides: false,
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: ' .swiper-pagination',
+        clickable: true,
+      },
+
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      }
+          });
+    </script>
+
+
+</body> </html>
+
+<!--Text Artikel dan Dakwah-->
+
+<div class="container-dakwah">
+<div class="left-dakwah">
+Artikel Dan Dakwah
+
+</div>
+
+<a href="https://jgjk.mobi/m/6198ad23d677d"><div class="right-dakwah"> Lihat Lainnya
+</div></a>
+</div>
+
+<!--KONTAINER KOTAK 1 GALLERI 1-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+
+<style>
+
+.grid5{
+ display:grid;
+ grid-template-columns: 60% 40%;
+ background:transparent;
+margin-left:px; margin-right:px;
+ border-bottom: 1.9px solid #f1f1f1;
+ margin-bottom:3vw;
+padding: 2px 2px;
+padding-right:4px;
+padding-bottom: 2px
+ }
+
+.bigg-box{ border: px solid silver; background:white; border-radius: 0px; padding: px; padding-left: vw;padding-bottom: 1vw;width:100%; height: auto; margin-bottom:10px; margin-top: 18vw; margin-left: px; margin-right:px;text-align: ; font-weight:700; font-family:"Poppins":
+position: relative;
+}
+
+.bigg-box::after { content: ""; clear: both; display: table;
+}
+.container20 { border: px solid silver; background:white; border-radius: 20px; padding: 3vw 8px; padding-left: 2vw;padding-bottom: 1vw;width:95%; height: auto; margin-bottom:10px; margin-top: 3vw; margin-left: px; margin-right:px;text-align: left; font-weight:700; font-family:"Poppins":
+position: relative;
+}
+
+.container20::after { content: ""; clear: both; display: table;
+}
+
+.text-2 {text-align:left;color:#202020;font-size: 13;margin-left:0px;margin-right:8px;margin-top;px;margin-bottom: 0px;font-weight:700; font-family: 'Poppins'}
+
+.text-23 {text-align:left;color:#202020;font-size: 13;margin-left:0px;margin-right:8px;margin-top;px;margin-bottom: 0px;font-weight:500; font-family: 'Poppins'}
+
+.h157 {text-align:left;color:black;font-weight: 300;font-size: 80℅;margin-left: 15px;margin-right:px;font-family:'Fredoka One'}
+
+.text-3{text-align:left;color:black;font-size: 15px;margin-left:0px;margin-right:8px;margin-top;px;margin-bottom: 0px;font-weight:600; font-family: verdana; width: 98%}
+
+.label {text-align:left;color:white;width:;font-weight: 400;font-size: 12px;margin-top: -4vw;margin-bottom:2vw;margin-right:px;font-family:'Fredoka One'; text-decoration:none; border-radius: 12px; padding:8px 10px;display:inline-block; background: #32CD32}
+
+</style>
+</head>
+<body>
+<div class="bigg-box">
+<center>
+
+<div class="container20">
+<div class="grid5">
+<div class="b-text">
+<div class="label"> Artikel </div>
+<div class="text-3"> Obral Sertifikasi Halal di media Sosial
+</div>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdXAOkIkSMtAO8BUAA36dxetDH2LXVmhMgA&usqp=CAU" alt="sipemandu" class="image335" style="width: box-sizing: inherit; display: table; height: auto; max-width: 70%; object-fit: fit; width: 100%; margin-right: 10px; margin-bottom: 2vw; margin-top: 0%; border-radius:12px;border: px solid #308900; box-shadow: 0 px px 0 rgb(0,0,0,0.2);float:;">
+
+</div>
+</div></a>
+
+<div class="container20">
+<div class="grid5">
+<div class="b-text">
+<div class="label"> Artikel </div>
+<div class="text-3"> Penyuluh Perlu Keterampilan Tambahan Buat menunjang Ekonomi Mereka
+</div>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSWa7gXKUGjt485eyMfGl474vQGcnEoy-fw&usqp=CAU" alt="sipemandu" class="image335" style="width: box-sizing: inherit; display: table; height: auto; max-width: 70%; object-fit: fit; width: 100%; margin-right: 10px; margin-bottom: 2vw; margin-top: 0%; border-radius:12px;border: px solid #308900; box-shadow: 0 px px 0 rgb(0,0,0,0.2);float:;">
+
+</div>
+</div></a>
+
+<div class="container20">
+<div class="grid5">
+<div class="b-text">
+<div class="label"> Artikel </div>
+<div class="text-3"> Kreatif Tapi Tetap Tau Diri
+</div>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtJcK3QTASe9DY9dwNhkv1KxolWSSzsKN5Q&usqp=CAU" alt="sipemandu" class="image335" style="width: box-sizing: inherit; display: table; height: auto; max-width: 70%; object-fit: fit; width: 100%; margin-right: 10px; margin-bottom: 2vw; margin-top: 0%; border-radius:12px;border: px solid #308900; box-shadow: 0 px px 0 rgb(0,0,0,0.2);float:;">
+
+</div>
+</div></a>
+
+<div class="container20">
+<div class="grid5">
+<div class="b-text">
+<div class="label"> Artikel </div>
+<div class="text-3"> Memaknai Qurban Dalam Perspektif Digitalisasi
+</div>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoFtOHFX_Zo_WwQ0B-ZlIruE4Gwp9fzSyKPw&usqp=CAU" alt="sipemandu" class="image335" style="width: box-sizing: inherit; display: table; height: auto; max-width: 70%; object-fit: fit; width: 100%; margin-right: 10px; margin-bottom: 2vw; margin-top: 0%; border-radius:12px;border: px solid #308900; box-shadow: 0 px px 0 rgb(0,0,0,0.2);float:;">
+
+</div>
+</div></a>
+
+
+</center>
+<br><br><br><br>
+
+
+</div>
+</body></html>
+
+</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+<div class="big-box">
+
+<img src="https://i.postimg.cc/3NfftdSm/20221208-163438-0000.png" alt="Background" class="responsive2" width="600" height="400">
+
+<center>
+
+<div class="container21">
+      <div class="box-grid2">
+<div class="h157"> 
+<img src="https://i.postimg.cc/2S9wWg1X/fingerprint-1.png" class="image336">
+
+Absensi Tingkat Tsanawiyah
+</div>
+<div class="kotak2">
+<a href="https://jgjk.mobi/p/6394c4c8bf4d6">
+<div class="button-absen">
+Absen Sekarang
+</div></a>
+</div>
+
+     </div>
+</div>
+
+
+<div class="container21">
+      <div class="box-grid2">
+<div class="h157"> 
+<img src="https://i.postimg.cc/XYYLpnYC/fingerprint-2.png" class="image336">
+Absensi Tingkat Aliyah
+</div>
+<div class="kotak2">
+<a href="https://app-absensi-aliyah.glideapp.io/dl/d0a5f4/s/54098b/r/CkgEtFMBQRO6yyoaJQA3Rw">
+<div class="button-absen2">
+Absen Sekarang
+</div></a>
+</div>
+
+     </div>
+</div>
+
+</center>
+
+
+</div>
+
+</div>
+
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+<div class="cont-pesan">
+
+<center>
+
+<div class="container21">
+      <div class="box-grid">
+<div class="h157"> 
+<img src="https://i.postimg.cc/4y0ZKd1W/chat-3.png" class="image335">
+
+Chat Admin melalui Aplikasi
+</div>
+<div class="kotak">
+<div class="button-chat">
+Chat Admin
+</div>
+</div>
+
+     </div>
+</div>
+
+
+<div class="container21">
+      <div class="box-grid">
+<div class="h157"> 
+<img src="https://i.postimg.cc/vmwBdfsY/whatsapp-3.png" class="image335">
+
+Chat Admin melalui whatsApp
+</div>
+<div class="kotak">
+<div class="button-chat">
+Chat Admin
+</div>
+</div>
+
+     </div>
+</div>
+
+
+</center>
+
+<img src="https://i.postimg.cc/Gt8sDvf9/20221210-154536-0000.png" alt="Background" class="responsive2" width="600" height="400">
+
+</div>
+
+
+</div>
+  <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+
+<center>
+<div class="container-profil">
+<img src="{foto}" alt="Avatar" class="image335" style="box-sizing: inherit; display: table; height: 80px; max-width: 100%; object-fit: fit; width: 80px;  margin-right: 10px; margin-bottom: 0vw; margin-top: -2%; border-radius:50%;border: 2px solid #f5f5f5; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;float:left;">
+
+<div class="h1583"> {nama}
+<div class="text-3"> {email}
+</div>
+<div class="text-4"> {hp}
+</div>
+</div>
+
+</div> </center>
+
+<div class="container273">
+
+<div class="text-12">Tabungan Kamu</div>
+
+<img src="https://i.postimg.cc/90SjMyd1/wallet-passes-app-4.png" alt="Avatar" class="image335" style="box-sizing: inherit; display: table; height: 35px; max-width: 100%; object-fit: fit; width: 35px; margin-right: 2px; margin-left: 10px; margin-top: -1%; border-radius:50%;border: px solid #308900; box-shadow: 0 px 8lpx 0 rgba(0,0,0,0.2);float:left;"></a>     
+<div class="h158">{saldo}
+</div>
+
+<div class="button-tabung"> Tabung </div>
+
+</div>
+
+<a href="action://act/profile">
+<div class="container3">
+<img src="https://i.postimg.cc/5t4p73kr/user-avatar-1.png" alt="Avatar" class="image335" style="width: 12%; margin-right: 12px; margin-top: 0px;margin-left: 1.2vw; border-radius:50%;border: 1.5px solid white; box-shadow: 0 px px 0 rgba(0,0,0,0.3); float:left"> 
+
+<div class="text-77">Edit Profil</div>
+<div class="text-88">Ubah Data & Foto</div>
+
+</div></a>
+
+<a href="action://act/address">
+<div class="container3">
+<img src="https://i.postimg.cc/NjKtrspL/location-pin.png" alt="Avatar" class="image335" style="width: 12%; margin-right: 12px; margin-top: 0px;margin-left: 1.2vw; border-radius:50%;border: 1.5px solid white; box-shadow: 0 px px 0 rgba(0,0,0,0.3); float:left"> 
+
+<div class="text-77">Ubah Alamat</div>
+<div class="text-88">Pengaturan Alamat</div>
+
+</div></a>
+
+<a href="action://act/password">
+<div class="container3">
+<img src="https://i.postimg.cc/9F8VMRPv/padlock.png" alt="Avatar" class="image335" style="width: 12%; margin-right: 12px; margin-top: 0px;margin-left: 1.2vw; border-radius:50%;border: 1.5px solid white; box-shadow: 0 px px 0 rgba(0,0,0,0.3); float:left;">   
+<div class="text-77">Ganti Password
+<div class="text-88">Buat Password Baru</div>
+</div>
+
+</div></a>
+
+<a href="action://act/logout">
+<div class="container3">
+<img src="https://i.postimg.cc/0ysqNTbJ/log-out.png" alt="Avatar" class="image335" style="width: 12%; margin-right: 12px; margin-top: 0px;margin-left: 1.2vw; border-radius:50%;border: 1.5px solid white; box-shadow: 0 px px 0 rgba(0,0,0,0.3); float:left;">   
+<div class="text-77">Log Out
+<div class="text-88">Keluar Aplikasi</div>
+</div>
+
+
+</div></a>
+
+</div>
+  </div>
+
+</div>
+
+<script>
+$("#tile-1 .nav-tabs a").click(function() {
+  var position = $(this).parent().position();
+  var width = $(this).parent().width();
+    $("#tile-1 .slider").css({"left":+ position.left,"width":width});
+});
+var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
+var actPosition = $("#tile-1 .nav-tabs .active").position();
+$("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
+</script>
+
+</body></html>
